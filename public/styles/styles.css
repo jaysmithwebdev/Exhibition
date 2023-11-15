@@ -1,6 +1,6 @@
 /* Temporary Style */
 
-body {
+/* body {
   background-color: #79ac78;
   color: white;
   font-family: "Montserrat";
@@ -12,6 +12,110 @@ h1 {
   font-size: 5rem;
   font-weight: 200;
   letter-spacing: 0.2rem;
-}
+} */
 
 /* THEMES */
+
+:root {
+  --main-red: #ff0063;
+  --main-teal-mid: #66bfbf;
+  --main-light: #eaf6f6;
+}
+
+/*  */
+
+body {
+  font-family: "Montserrat";
+  letter-spacing: 0.05rem;
+  background-color: var(--main-teal-mid);
+}
+
+h1 {
+  margin-top: 6rem;
+  color: var(--main-red);
+}
+
+h2,
+h3,
+.feature-icon {
+  margin: 0 0.5rem 0;
+  color: var(--main-red);
+}
+
+p {
+  text-align: justify;
+  margin: 0 0.5rem 0;
+}
+
+img {
+  margin: 0 2rem 2rem;
+}
+
+audio {
+  width: 90%;
+  margin: auto 5%;
+}
+
+footer {
+  margin-top: 3rem;
+}
+
+.navbar {
+  color: white;
+  background-image: url("https://picsum.photos/2000");
+}
+
+#intro {
+  color: white;
+  background-image: url("https://picsum.photos/2000");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+  padding-top: 0.5rem;
+}
+
+.landing-title {
+  text-align: center;
+  color: white;
+}
+
+.landing-img {
+  color: white;
+}
+
+.viewing-title {
+  margin-top: 3rem;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.feature-icon {
+  background-color: var(--main-red);
+  color: white;
+}
+
+.exhibit-img {
+  color: white;
+}
+
+.footer-text {
+  text-align: center;
+  color: grey;
+  font-size: 0.5rem;
+  line-height: 0.1rem;
+}
+
+#guide {
+  background-color: var(--main-light);
+  padding-top: 0.5rem;
+}
+
+/* media queries */
+
+@media (max-width: 770px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}

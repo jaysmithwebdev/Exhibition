@@ -1,0 +1,73 @@
+<div class="container">
+  <section id="intro">
+    <h1 class="landing-title"><%= contentList.name %></h1>
+    <h2 class="landing-title">This is a subtitle for the landing page.</h2>
+    <div class="flex-container">
+      <img class="landing-img" src="<%= contentList.image %>" alt="" />
+      <p><%= contentList.description %></p>
+    </div>
+    <audio controls controlsList="nodownload">
+      <source src="<%= contentList.audio %>" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+  </section>
+  <section id="guide">
+    <h2 class="pb-2 border-bottom viewing-title">
+      Viewing and Listening Methods:
+    </h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-md-2 row-cols-xl-4">
+      <div class="feature col">
+        <div
+          class="feature-icon d-inline-flex align-items-center justify-content-center bg-gradient fs-2 mb-3"
+        >
+          <span class="material-symbols-outlined"> qr_code_2 </span>
+        </div>
+        <h3 class="fs-2">QR Codes</h3>
+        <p>
+          Paragraph of text beneath the heading to explain the heading. We'll
+          add onto it with another sentence and probably just keep going until
+          we run out of words.
+        </p>
+      </div>
+      <div class="feature col">
+        <div
+          class="feature-icon d-inline-flex align-items-center justify-content-center bg-gradient fs-2 mb-3"
+        >
+          <span class="material-symbols-outlined"> headphones </span>
+        </div>
+        <h3 class="fs-2">Audio Described</h3>
+        <p>
+          Paragraph of text beneath the heading to explain the heading. We'll
+          add onto it with another sentence and probably just keep going until
+          we run out of words.
+        </p>
+      </div>
+      <div class="feature col">
+        <div
+          class="feature-icon d-inline-flex align-items-center justify-content-center bg-gradient fs-2 mb-3"
+        >
+          <span class="material-symbols-outlined"> menu </span>
+        </div>
+        <h3 class="fs-2">Exhibit Links</h3>
+        <p>
+          Paragraph of text beneath the heading to explain the heading. We'll
+          add onto it with another sentence and probably just keep going until
+          we run out of words.
+        </p>
+      </div>
+      <div class="feature col">
+        <div
+          class="feature-icon d-inline-flex align-items-center justify-content-center bg-gradient fs-2 mb-3"
+        >
+          <span class="material-symbols-outlined"> arrow_downward </span>
+        </div>
+        <h3 class="fs-2">Walk-Through</h3>
+        <p>
+          Paragraph of text beneath the heading to explain the heading. We'll
+          add onto it with another sentence and probably just keep going until
+          we run out of words.
+        </p>
+      </div>
+    </div>
+  </section>
+</div>
