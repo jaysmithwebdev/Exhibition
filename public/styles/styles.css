@@ -98,17 +98,23 @@ footer {
 
 .exhibit-img {
   color: white;
+  margin-top: 2rem;
 }
 
 .exhibit-audio {
   margin-bottom: 0.4rem;
 }
 
+.audio-positioner {
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
 .footer-text {
   text-align: center;
   color: grey;
   font-size: 0.5rem;
-  line-height: 0.1rem;
+  /* line-height: 0.1rem; */
 }
 
 #guide {
@@ -121,5 +127,9 @@ footer {
 @media (max-width: 770px) {
   .flex-container {
     flex-direction: column;
+  }
+
+  .audio-positioner {
+    flex-direction: column-reverse;
   }
 }
