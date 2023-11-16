@@ -77,10 +77,12 @@ footer {
 .landing-title {
   text-align: center;
   color: white;
+  text-shadow: 1px 1px 3px darkslategray;
 }
 
 .landing-img {
   color: white;
+  margin-top: 2rem;
 }
 
 .viewing-title {
@@ -94,6 +96,37 @@ footer {
 .feature-icon {
   background-color: var(--main-red);
   color: white;
+}
+
+.background1 {
+  background-color: var(--main-red);
+  color: white;
+}
+
+.background1 h1 {
+  color: white;
+  padding-top: 2rem;
+}
+
+.background2 {
+  color: white;
+  background-image: url("https://picsum.photos/2000");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+}
+
+.background2 h1 {
+  color: white;
+  padding-top: 2rem;
+}
+
+.background3 {
+  background-color: var(--main-light);
+}
+
+.background3 h1 {
+  padding-top: 2rem;
 }
 
 .exhibit-img {
