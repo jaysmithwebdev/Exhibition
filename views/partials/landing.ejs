@@ -1,10 +1,10 @@
 <div class="container">
-  <section id="intro">
+  <section id="intro" class="dark-container">
     <h1 class="landing-title"><%= contentList.name %></h1>
     <h2 class="landing-title">This is a subtitle for the landing page.</h2>
     <div class="flex-container">
       <img class="landing-img" src="<%= contentList.image %>" alt="" />
-      <p><%= contentList.description %></p>
+      <p class="mt-4"><%= contentList.description %></p>
     </div>
     <audio controls controlsList="nodownload" class="sticky-bottom">
       <source src="<%= contentList.audio %>" type="audio/mpeg" />
@@ -12,7 +12,7 @@
     </audio>
   </section>
   <section id="guide">
-    <h2 class="pb-2 border-bottom viewing-title">
+    <h2 class="pb-2 pt-4 border-bottom viewing-title">
       Viewing and Listening Methods:
     </h2>
     <div class="row g-4 py-5 row-cols-1 row-cols-md-2 row-cols-xl-4">
@@ -24,9 +24,8 @@
         </div>
         <h3 class="fs-2">QR Codes</h3>
         <p>
-          Paragraph of text beneath the heading to explain the heading. We'll
-          add onto it with another sentence and probably just keep going until
-          we run out of words.
+          Scan the QR codes you find as you make your way around the exhibition
+          to see or hear more about the exhibits.
         </p>
       </div>
       <div class="feature col">
@@ -35,11 +34,10 @@
         >
           <span class="material-symbols-outlined"> headphones </span>
         </div>
-        <h3 class="fs-2">Audio Described</h3>
+        <h3 class="fs-2">Audio</h3>
         <p>
-          Paragraph of text beneath the heading to explain the heading. We'll
-          add onto it with another sentence and probably just keep going until
-          we run out of words.
+          You can hear the information about the exhibition via the embeded
+          audio players found on each page.
         </p>
       </div>
       <div class="feature col">
@@ -50,9 +48,8 @@
         </div>
         <h3 class="fs-2">Exhibit Links</h3>
         <p>
-          Paragraph of text beneath the heading to explain the heading. We'll
-          add onto it with another sentence and probably just keep going until
-          we run out of words.
+          Individual exhibit pages can also be found using the links at the top
+          of any page on the site.
         </p>
       </div>
       <div class="feature col">
@@ -63,9 +60,8 @@
         </div>
         <h3 class="fs-2">Walk-Through</h3>
         <p>
-          Paragraph of text beneath the heading to explain the heading. We'll
-          add onto it with another sentence and probably just keep going until
-          we run out of words.
+          You can experience the whole exhibition by scrolling through this
+          page.
         </p>
       </div>
     </div>
