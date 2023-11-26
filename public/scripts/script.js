@@ -1,6 +1,8 @@
 const synth = window.speechSynthesis;
+let textWhenRestarting = "";
 
 function speak(description) {
+  textWhenRestarting = description;
   const utterThis = new SpeechSynthesisUtterance(description);
   if (!synth.speaking) {
     const voices = synth.getVoices();
@@ -13,7 +15,7 @@ function restart() {
   if (synth.speaking) {
     synth.pause();
     synth.cancel();
-    speak();
+    speak(textWhenRestarting);
   }
 }
 

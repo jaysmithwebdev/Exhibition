@@ -6,8 +6,9 @@
       <img class="landing-img" src="<%= contentList.image %>" alt="" />
       <p class="mt-4 landing-description"><%= contentList.description %></p>
     </div>
-    <% var theClassName = "landing-description" %> <%- include("player.ejs",
-    theClassName) %>
+    <div class="exhibit-audio landing-audio sticky-bottom">
+      <%- include("player.ejs", contentList.description) %>
+    </div>
   </section>
   <section id="guide">
     <h2 class="pb-2 pt-4 border-bottom viewing-title">

@@ -72,7 +72,6 @@ footer {
   background-size: auto;
   background-position: center;
   text-shadow: 1px 1px 5px black;
-
   margin-top: 6rem;
   margin-bottom: 2rem;
 }
@@ -148,6 +147,10 @@ footer {
 
 .exhibit-audio {
   margin-bottom: 0.4rem;
+}
+
+.landing-audio {
+  bottom: 0.4rem;
 }
 
 .audio-positioner {
