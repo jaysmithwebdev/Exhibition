@@ -16,7 +16,7 @@ app.get("/", (req, res) => {
   res.render("index.ejs", links);
 });
 
-app.get("/one", (req, res) => {
+app.get("/exhibitone", (req, res) => {
   const links = {
     pageLink: "partials/exhibit.ejs",
     exhibit: exhibits.exhibit1,
@@ -24,7 +24,7 @@ app.get("/one", (req, res) => {
   res.render("index.ejs", links);
 });
 
-app.get("/two", (req, res) => {
+app.get("/exhibittwo", (req, res) => {
   const links = {
     pageLink: "partials/exhibit.ejs",
     exhibit: exhibits.exhibit2,
@@ -32,7 +32,7 @@ app.get("/two", (req, res) => {
   res.render("index.ejs", links);
 });
 
-app.get("/three", (req, res) => {
+app.get("/exhibitthree", (req, res) => {
   const links = {
     pageLink: "partials/exhibit.ejs",
     exhibit: exhibits.exhibit3,
@@ -40,7 +40,7 @@ app.get("/three", (req, res) => {
   res.render("index.ejs", links);
 });
 
-app.get("/four", (req, res) => {
+app.get("/exhibitfour", (req, res) => {
   const links = {
     pageLink: "partials/exhibit.ejs",
     exhibit: exhibits.exhibit4,

@@ -4,12 +4,10 @@
     <h2 class="landing-title">This is a subtitle for the landing page.</h2>
     <div class="flex-container">
       <img class="landing-img" src="<%= contentList.image %>" alt="" />
-      <p class="mt-4"><%= contentList.description %></p>
+      <p class="mt-4 landing-description"><%= contentList.description %></p>
     </div>
-    <audio controls controlsList="nodownload" class="sticky-bottom">
-      <source src="<%= contentList.audio %>" type="audio/mpeg" />
-      Your browser does not support the audio element.
-    </audio>
+    <% var theClassName = "landing-description" %> <%- include("player.ejs",
+    theClassName) %>
   </section>
   <section id="guide">
     <h2 class="pb-2 pt-4 border-bottom viewing-title">

@@ -1,0 +1,21 @@
+<div class="container speech-player">
+  <div class="row">
+    <span class="material-symbols-outlined col-1"> headphones </span>
+    <span class="col-5 tts">Audio</span>
+    <div class="col-2">
+      <button onclick="speak('<%= description %>')" class="player-btn">
+        <span class="material-symbols-outlined"> play_arrow </span>
+      </button>
+    </div>
+    <div class="col-2">
+      <button onclick="restart()" class="player-btn">
+        <span class="material-symbols-outlined"> skip_previous </span>
+      </button>
+    </div>
+    <div class="col-2">
+      <button onclick="stop()" class="player-btn">
+        <span class="material-symbols-outlined"> stop </span>
+      </button>
+    </div>
+  </div>
+</div>

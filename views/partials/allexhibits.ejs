@@ -10,12 +10,10 @@
           src="<%= exhibitList.exhibit1.image %>"
           alt=""
         />
-        <p class="mt-4"><%= exhibitList.exhibit1.description %></p>
+        <p class="mt-4 description1"><%= exhibitList.exhibit1.description %></p>
       </div>
-      <audio controls controlsList="nodownload">
-        <source src="<%= exhibitList.exhibit1.audio %>" type="audio/mpeg" />
-        Your browser does not support the audio element.
-      </audio>
+      <%- include("player.ejs", {description :
+      'exhibitList.exhibit1.description'})%>
     </div>
     <!-- end flex container -->
   </div>
@@ -28,12 +26,10 @@
           src="<%= exhibitList.exhibit2.image %>"
           alt=""
         />
-        <p class="mt-4"><%= exhibitList.exhibit2.description %></p>
+        <p class="mt-4 description2"><%= exhibitList.exhibit2.description %></p>
       </div>
-      <audio controls controlsList="nodownload">
-        <source src="<%= exhibitList.exhibit2.audio %>" type="audio/mpeg" />
-        Your browser does not support the audio element.
-      </audio>
+      <%- include("player.ejs", {description :
+      'exhibitList.exhibit2.description'}) %>
     </div>
   </div>
   <div class="container background3">
@@ -45,12 +41,10 @@
           src="<%= exhibitList.exhibit3.image %>"
           alt=""
         />
-        <p class="mt-4"><%= exhibitList.exhibit3.description %></p>
+        <p class="mt-4 description3"><%= exhibitList.exhibit3.description %></p>
       </div>
-      <audio controls controlsList="nodownload">
-        <source src="<%= exhibitList.exhibit3.audio %>" type="audio/mpeg" />
-        Your browser does not support the audio element.
-      </audio>
+      <%- include("player.ejs", {description :
+      'exhibitList.exhibit3.description'}) %>
     </div>
   </div>
   <div class="container background1">
@@ -62,12 +56,10 @@
           src="<%= exhibitList.exhibit4.image %>"
           alt=""
         />
-        <p class="mt-4"><%= exhibitList.exhibit4.description %></p>
+        <p class="mt-4 description4"><%= exhibitList.exhibit4.description %></p>
       </div>
-      <audio controls controlsList="nodownload">
-        <source src="<%= exhibitList.exhibit4.audio %>" type="audio/mpeg" />
-        Your browser does not support the audio element.
-      </audio>
+      <%- include("player.ejs", {description :
+      'exhibitList.exhibit4.description'}) %>
     </div>
   </div>
 </div>

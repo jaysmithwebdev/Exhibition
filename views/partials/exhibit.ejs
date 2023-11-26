@@ -2,10 +2,9 @@
   <h1 class="border-bottom"><%= exhibit.name %></h1>
   <div class="flex-container">
     <img class="exhibit-img" src="<%= exhibit.image %>" alt="" />
-    <p><%= exhibit.description %></p>
+    <p class="description"><%= exhibit.description %></p>
   </div>
-  <audio controls controlsList="nodownload" class="fixed-bottom exhibit-audio">
-    <source src="<%= exhibit.audio %>" type="audio/mpeg" />
-    Your browser does not support the audio element.
-  </audio>
+  <div class="exhibit-audio fixed-bottom">
+    <%- include("player.ejs", exhibit.description) %>
+  </div>
 </div>

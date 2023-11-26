@@ -57,12 +57,12 @@ audio {
 }
 
 footer {
-  margin-top: 3rem;
+  margin-top: 20rem;
 }
 
 .navbar {
-  color: white;
-  background-image: url("https://picsum.photos/id/63/2000");
+  color: var(--main-light);
+  background-color: var(--main-red);
 }
 
 #intro {
@@ -155,6 +155,28 @@ footer {
   margin-top: 2rem;
 }
 
+.speech-player {
+  padding-top: 5px;
+  width: 90%;
+  font-size: 90%;
+  color: var(--main-red);
+  background-color: var(--main-light);
+  border-radius: 20px;
+  box-shadow: 1px 1px 2px darkslategray;
+  text-shadow: none;
+}
+
+.tts {
+  padding-top: 3px;
+}
+
+.player-btn {
+  color: var(--main-red);
+  background-color: var(--main-light);
+  border-style: none;
+  border-radius: 20px;
+}
+
 .footer-text {
   text-align: center;
   color: grey;
@@ -175,5 +197,15 @@ footer {
 
   .audio-positioner {
     flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 370px) {
+  .tts {
+    display: none;
+  }
+
+  .player-btn {
+    float: end;
   }
 }
