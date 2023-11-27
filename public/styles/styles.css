@@ -73,6 +73,7 @@ footer {
   background-position: center;
   text-shadow: 1px 1px 5px black;
   margin-top: 6rem;
+  padding-bottom: 0.4rem;
   margin-bottom: 2rem;
 }
 
@@ -150,12 +151,24 @@ footer {
 }
 
 .landing-audio {
-  bottom: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+.guide-audio {
+  margin: 1rem 0;
 }
 
 .audio-positioner {
   flex-direction: column;
   margin-top: 2rem;
+}
+
+.feature {
+  height: 270px;
+}
+
+.guide-text {
+  height: 120px;
 }
 
 .speech-player {
@@ -180,6 +193,12 @@ footer {
   border-radius: 20px;
 }
 
+.ruler {
+  width: 70%;
+  margin-left: 15%;
+  color: var(--main-teal-mid);
+}
+
 .footer-text {
   text-align: center;
   color: grey;
@@ -192,6 +211,12 @@ footer {
 }
 
 /* media queries */
+
+@media (min-width: 770px) {
+  .guide-audio .tts {
+    display: none;
+  }
+}
 
 @media (max-width: 770px) {
   .flex-container {

@@ -22,10 +22,12 @@
           <span class="material-symbols-outlined"> qr_code_2 </span>
         </div>
         <h3 class="fs-2">QR Codes</h3>
-        <p>
-          Scan the QR codes you find as you make your way around the exhibition
-          to see or hear more about the exhibits.
-        </p>
+        <div class="exhibit-audio guide-audio">
+          <%- include("player.ejs", contentList.guide1) %>
+        </div>
+        <p class="guide-text"><%= contentList.guide1 %></p>
+
+        <hr class="ruler" />
       </div>
       <div class="feature col">
         <div
@@ -34,10 +36,12 @@
           <span class="material-symbols-outlined"> headphones </span>
         </div>
         <h3 class="fs-2">Audio</h3>
-        <p>
-          You can hear the information about the exhibition via the embeded
-          audio players found on each page.
-        </p>
+        <div class="exhibit-audio guide-audio">
+          <%- include("player.ejs", contentList.guide2) %>
+        </div>
+        <p class="guide-text"><%= contentList.guide2 %></p>
+
+        <hr class="ruler" />
       </div>
       <div class="feature col">
         <div
@@ -46,10 +50,12 @@
           <span class="material-symbols-outlined"> menu </span>
         </div>
         <h3 class="fs-2">Exhibit Links</h3>
-        <p>
-          Individual exhibit pages can also be found using the links at the top
-          of any page on the site.
-        </p>
+        <div class="exhibit-audio guide-audio">
+          <%- include("player.ejs", contentList.guide3) %>
+        </div>
+        <p class="guide-text"><%= contentList.guide3 %></p>
+
+        <hr class="ruler" />
       </div>
       <div class="feature col">
         <div
@@ -58,10 +64,12 @@
           <span class="material-symbols-outlined"> arrow_downward </span>
         </div>
         <h3 class="fs-2">Walk-Through</h3>
-        <p>
-          You can experience the whole exhibition by scrolling through this
-          page.
-        </p>
+        <div class="exhibit-audio guide-audio">
+          <%- include("player.ejs", contentList.guide4) %>
+        </div>
+        <p class="guide-text"><%= contentList.guide4 %></p>
+
+        <hr class="ruler" />
       </div>
     </div>
   </section>
