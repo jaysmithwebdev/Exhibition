@@ -1,25 +1,9 @@
-/* Temporary Style */
-
-/* body {
-  background-color: #79ac78;
-  color: white;
-  font-family: "Montserrat";
-}
-
-h1 {
-  text-align: center;
-  margin-top: 6rem;
-  font-size: 5rem;
-  font-weight: 200;
-  letter-spacing: 0.2rem;
-} */
-
 /* THEMES */
 
 :root {
-  --main-red: #ff0063;
-  --main-teal-mid: #66bfbf;
-  --main-light: #eaf6f6;
+  --main-dark: #4b56d2;
+  --main-mid: #82c3ec;
+  --main-light: #f1f6f5;
 }
 
 /*  */
@@ -27,19 +11,21 @@ h1 {
 body {
   font-family: "Montserrat";
   letter-spacing: 0.05rem;
-  background-color: var(--main-teal-mid);
+  background-color: var(--main-mid);
 }
 
 h1 {
   margin-top: 6rem;
-  color: var(--main-red);
+  margin-left: 1rem;
+  margin-right: 1rem;
+  color: var(--main-dark);
 }
 
 h2,
 h3,
 .feature-icon {
   margin: 0 0.5rem 0;
-  color: var(--main-red);
+  color: var(--main-dark);
 }
 
 p {
@@ -49,6 +35,8 @@ p {
 
 img {
   margin: 0 2rem 2rem;
+  border-radius: 5px;
+  max-width: 300px;
 }
 
 audio {
@@ -62,19 +50,29 @@ footer {
 
 .navbar {
   color: var(--main-light);
-  background-color: var(--main-red);
+  background-color: var(--main-dark);
 }
 
 #intro {
   color: white;
-  background-image: url("https://picsum.photos/id/63/2000");
+  background-image: url("../images/AllPieces1.jpeg");
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
   background-position: center;
+  border-radius: 5px;
   text-shadow: 1px 1px 5px black;
   margin-top: 6rem;
   padding-bottom: 0.4rem;
   margin-bottom: 2rem;
+}
+
+#intro h2 {
+  color: white;
+  text-align: right;
+}
+
+.intro-h-t {
+  flex-direction: column;
 }
 
 .landing-title {
@@ -89,6 +87,10 @@ footer {
   margin-top: 2rem;
 }
 
+.landing-description {
+  margin-bottom: 1rem;
+}
+
 .viewing-title {
   margin-top: 3rem;
 }
@@ -98,12 +100,13 @@ footer {
 }
 
 .feature-icon {
-  background-color: var(--main-red);
+  background-color: var(--main-dark);
   color: white;
 }
 
 .background1 {
-  background-color: var(--main-red);
+  background-color: var(--main-dark);
+  border-radius: 5px;
   color: white;
   padding-bottom: 1rem;
 }
@@ -116,10 +119,11 @@ footer {
 .background2 {
   color: white;
   text-shadow: 1px 1px 5px black;
-  background-image: url("https://picsum.photos/id/63/2000");
+  background-image: url("../images/AllPieces1.jpeg");
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
   background-position: center;
+  border-radius: 5px;
   padding-bottom: 1rem;
 }
 
@@ -134,6 +138,7 @@ footer {
 
 .background3 {
   background-color: var(--main-light);
+  border-radius: 5px;
   padding-bottom: 1rem;
 }
 
@@ -175,9 +180,9 @@ footer {
   padding-top: 5px;
   width: 90%;
   font-size: 90%;
-  color: var(--main-red);
+  color: var(--main-dark);
   background-color: var(--main-light);
-  border-radius: 20px;
+  border-radius: 5px;
   box-shadow: 1px 1px 2px darkslategray;
   text-shadow: none;
 }
@@ -187,7 +192,7 @@ footer {
 }
 
 .player-btn {
-  color: var(--main-red);
+  color: var(--main-dark);
   background-color: var(--main-light);
   border-style: none;
   border-radius: 20px;
@@ -196,7 +201,7 @@ footer {
 .ruler {
   width: 70%;
   margin-left: 15%;
-  color: var(--main-teal-mid);
+  color: var(--main-mid);
 }
 
 .footer-text {
@@ -208,6 +213,7 @@ footer {
 
 #guide {
   background-color: var(--main-light);
+  border-radius: 5px;
 }
 
 /* media queries */

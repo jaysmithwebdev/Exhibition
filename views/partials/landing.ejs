@@ -1,13 +1,17 @@
 <div class="container">
   <section id="intro" class="dark-container">
     <h1 class="landing-title"><%= contentList.name %></h1>
-    <h2 class="landing-title">This is a subtitle for the landing page.</h2>
     <div class="flex-container">
       <img class="landing-img" src="<%= contentList.image %>" alt="" />
-      <p class="mt-4 landing-description"><%= contentList.description %></p>
+      <div class="flex-container intro-h-t">
+        <h2>The Exhibition</h2>
+        <p class="mt-4 landing-description"><%= contentList.description %></p>
+        <h2>The Artist</h2>
+        <p class="mt-4 landing-description"><%= contentList.artist %></p>
+      </div>
     </div>
     <div class="exhibit-audio landing-audio sticky-bottom">
-      <%- include("player.ejs", contentList.description) %>
+      <%- include("player.ejs", {description: contentList.artist}) %>
     </div>
   </section>
   <section id="guide">
@@ -23,7 +27,7 @@
         </div>
         <h3 class="fs-2">QR Codes</h3>
         <div class="exhibit-audio guide-audio">
-          <%- include("player.ejs", contentList.guide1) %>
+          <%- include("player.ejs", {description: contentList.guide1}) %>
         </div>
         <p class="guide-text"><%= contentList.guide1 %></p>
 
@@ -37,7 +41,7 @@
         </div>
         <h3 class="fs-2">Audio</h3>
         <div class="exhibit-audio guide-audio">
-          <%- include("player.ejs", contentList.guide2) %>
+          <%- include("player.ejs", {description: contentList.guide2}) %>
         </div>
         <p class="guide-text"><%= contentList.guide2 %></p>
 
@@ -51,7 +55,7 @@
         </div>
         <h3 class="fs-2">Exhibit Links</h3>
         <div class="exhibit-audio guide-audio">
-          <%- include("player.ejs", contentList.guide3) %>
+          <%- include("player.ejs", {description: contentList.guide3}) %>
         </div>
         <p class="guide-text"><%= contentList.guide3 %></p>
 
@@ -65,7 +69,7 @@
         </div>
         <h3 class="fs-2">Walk-Through</h3>
         <div class="exhibit-audio guide-audio">
-          <%- include("player.ejs", contentList.guide4) %>
+          <%- include("player.ejs", {description: contentList.guide4}) %>
         </div>
         <p class="guide-text"><%= contentList.guide4 %></p>
 

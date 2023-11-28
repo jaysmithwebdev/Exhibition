@@ -1,7 +1,6 @@
 <div class="container">
   <div class="container background1">
     <h1 class="border-bottom"><%= exhibitList.exhibit1.name %></h1>
-    <!-- another flex container here with the div and the audio, class name for css -->
     <div class="flex-container audio-positioner">
       <!-- css sets direction to column, media query sets direction to column reverse -->
       <div class="flex-container">
@@ -12,7 +11,7 @@
         />
         <p class="mt-4 description1"><%= exhibitList.exhibit1.description %></p>
       </div>
-      <%- include("player.ejs", {description : 'This is hard coded text.'})%>
+      <%- include("player.ejs", {description: exhibitList.audioDescription1})%>
     </div>
     <!-- end flex container -->
   </div>
@@ -27,8 +26,8 @@
         />
         <p class="mt-4 description2"><%= exhibitList.exhibit2.description %></p>
       </div>
-      <%- include("player.ejs", {description :
-      'exhibitList.exhibit2.description'}) %>
+      <%- include("player.ejs", {description : exhibitList.audioDescription2})
+      %>
     </div>
   </div>
   <div class="container background3">
@@ -42,8 +41,8 @@
         />
         <p class="mt-4 description3"><%= exhibitList.exhibit3.description %></p>
       </div>
-      <%- include("player.ejs", {description :
-      'exhibitList.exhibit3.description'}) %>
+      <%- include("player.ejs", {description : exhibitList.audioDescription3})
+      %>
     </div>
   </div>
   <div class="container background1">
@@ -57,8 +56,8 @@
         />
         <p class="mt-4 description4"><%= exhibitList.exhibit4.description %></p>
       </div>
-      <%- include("player.ejs", {description :
-      'exhibitList.exhibit4.description'}) %>
+      <%- include("player.ejs", {description : exhibitList.audioDescription4})
+      %>
     </div>
   </div>
 </div>
