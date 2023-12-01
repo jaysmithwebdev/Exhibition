@@ -2,7 +2,13 @@
   <h1 class="border-bottom"><%= exhibit.name %></h1>
   <div class="flex-container">
     <img class="exhibit-img" src="<%= exhibit.image %>" alt="" />
-    <p class="description"><%= exhibit.description %></p>
+    <!-- <p class="description"><%= exhibit.description %></p> -->
+    <div>
+      <% exhibit.description.forEach((paragraph) => {%>
+      <p class="description"><%= paragraph %></p>
+      <br />
+      <% }) %>
+    </div>
   </div>
   <div class="exhibit-audio fixed-bottom">
     <%- include("player.ejs", exhibit.description) %>

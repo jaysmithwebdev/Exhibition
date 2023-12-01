@@ -9,7 +9,12 @@
           src="<%= exhibitList.exhibit1.image %>"
           alt=""
         />
-        <p class="mt-4 description1"><%= exhibitList.exhibit1.description %></p>
+        <!-- <p class="mt-4 description1"><%= exhibitList.exhibit1.description %></p> -->
+        <div>
+          <% exhibitList.exhibit1.description.forEach((paragraph) => {%>
+          <p class="mt-4 description1"><%= paragraph %></p>
+          <% }) %>
+        </div>
       </div>
       <%- include("player.ejs", {description: exhibitList.audioDescription1})%>
     </div>
@@ -24,7 +29,12 @@
           src="<%= exhibitList.exhibit2.image %>"
           alt=""
         />
-        <p class="mt-4 description2"><%= exhibitList.exhibit2.description %></p>
+        <!-- <p class="mt-4 description2"><%= exhibitList.exhibit2.description %></p> -->
+        <div>
+          <% exhibitList.exhibit2.description.forEach((paragraph) => {%>
+          <p class="mt-4 description2"><%= paragraph %></p>
+          <% }) %>
+        </div>
       </div>
       <%- include("player.ejs", {description : exhibitList.audioDescription2})
       %>
@@ -39,7 +49,12 @@
           src="<%= exhibitList.exhibit3.image %>"
           alt=""
         />
-        <p class="mt-4 description3"><%= exhibitList.exhibit3.description %></p>
+        <!-- <p class="mt-4 description3"><%= exhibitList.exhibit3.description %></p> -->
+        <div>
+          <% exhibitList.exhibit3.description.forEach((paragraph) => {%>
+          <p class="mt-4 description3"><%= paragraph %></p>
+          <% }) %>
+        </div>
       </div>
       <%- include("player.ejs", {description : exhibitList.audioDescription3})
       %>
@@ -54,7 +69,12 @@
           src="<%= exhibitList.exhibit4.image %>"
           alt=""
         />
-        <p class="mt-4 description4"><%= exhibitList.exhibit4.description %></p>
+        <!-- <p class="mt-4 description4"><%= exhibitList.exhibit4.description %></p> -->
+        <div>
+          <% exhibitList.exhibit4.description.forEach((paragraph) => {%>
+          <p class="mt-4 description4"><%= paragraph %></p>
+          <% }) %>
+        </div>
       </div>
       <%- include("player.ejs", {description : exhibitList.audioDescription4})
       %>
