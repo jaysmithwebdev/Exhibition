@@ -153,6 +153,12 @@ footer {
   margin: 2rem auto 2rem;
 }
 
+.exhibit-text-box {
+  border-radius: 5px;
+  background-color: var(--main-light);
+  padding: 2rem 0 2rem;
+}
+
 .exhibit-audio {
   margin-bottom: 0.4rem;
 }
@@ -236,6 +242,10 @@ footer {
 
 @media (min-width: 1201px) {
   .landing-img {
+    margin: 2rem 1rem 2rem;
+  }
+
+  .exhibit-img {
     margin: 2rem 1rem 2rem;
   }
 }
