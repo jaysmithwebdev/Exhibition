@@ -5,9 +5,23 @@
       <img class="landing-img" src="<%= contentList.image %>" alt="" />
       <div class="flex-container intro-h-t">
         <h2>The Exhibition</h2>
-        <p class="mt-4 landing-description"><%= contentList.description %></p>
+        <!-- ----------------------------------------------------------------- -->
+        <!-- <p class="mt-4 landing-description"><%= contentList.description %></p> -->
+        <div>
+          <% contentList.description.forEach((paragraph) => {%>
+          <p class="mt-4 landing-description"><%= paragraph %></p>
+          <% }) %>
+        </div>
+        <!-- ------------------------------------------------------------------ -->
         <h2>The Artist</h2>
-        <p class="mt-4 landing-description"><%= contentList.artist %></p>
+        <!-- ---------------------------------------------------------------- -->
+        <!-- <p class="mt-4 landing-description"><%= contentList.artist %></p> -->
+        <div>
+          <% contentList.artist.forEach((paragraph) => {%>
+          <p class="mt-4 landing-description"><%= paragraph %></p>
+          <% }) %>
+        </div>
+        <!-- ----------------------------------------------------------------- -->
       </div>
     </div>
     <div class="exhibit-audio landing-audio sticky-bottom">
