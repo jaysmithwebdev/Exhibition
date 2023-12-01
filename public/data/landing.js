@@ -1,6 +1,8 @@
 const landing = {
   name: "Pulling At The Threads Of Ableism",
   image: "images/ImFine1.jpeg",
+  imgalt:
+    "A cross stitched wheel chair logo with the words I'm fine underneath.",
   description: [
     "This mini exhibition is the culmination of the artist's research and creative exploration into disability identity and how it is affected by an ableist society. This arts-based research drew on the artist’s personal experience, linking to a wider cultural and social understanding of the subject, and was undertaken as the final project in her studies for a Master’s degree in Creative Practices in Education at the University of Chester.",
     "Through her lived experience, the artist has explored the feelings and frustrations of living as a disabled person within a world that is not designed to cater to her accessibility needs and in a society that is not comfortable with difference. The pieces examine what it is like to live as a disabled person, each piece reflecting the artist’s feelings created by her situation and how it impacts on her identities.",
