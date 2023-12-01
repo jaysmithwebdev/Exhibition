@@ -197,7 +197,15 @@ footer {
   color: var(--main-dark);
   background-color: var(--main-light);
   border-style: none;
-  border-radius: 20px;
+  border-radius: 5px;
+}
+
+.player-btn:active {
+  color: var(--main-light);
+  background-color: var(--main-dark);
+  border: var(--main-light);
+  border-width: 10px;
+  box-shadow: 1px 1px 2px darkslategray;
 }
 
 .ruler {
