@@ -1,0 +1,30 @@
+<div class="container">
+  <h1 class="border-bottom">Contact Us</h1>
+  <br />
+  <div class="form-box">
+    <form action="/contact" method="POST">
+      <h3>Name</h3>
+      <label for="name">Form field to enter your name</label>
+      <input type="text" name="name" placeholder="Your name here" required />
+      <h3>Email</h3>
+      <label for="email">Form field to enter your email address</label>
+      <input
+        type="email"
+        name="email"
+        placeholder="Your email address here"
+        required
+      />
+      <h3>Your Message</h3>
+      <label for="message"
+        >Form field to enter your message, comment, or question</label
+      >
+      <textarea
+        name="message"
+        placeholder="Your comment here"
+        rows="8"
+        required
+      ></textarea>
+      <input type="submit" class="submit" />
+    </form>
+  </div>
+</div>

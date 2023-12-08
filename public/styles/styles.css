@@ -45,6 +45,30 @@ audio {
   margin: auto 5%;
 }
 
+input,
+textarea {
+  width: 90%;
+  margin-bottom: 2rem;
+  border-color: var(--main-dark);
+  border-radius: 5px;
+  border-width: 1px;
+  margin-left: 5%;
+}
+
+form h3 {
+  margin-left: 5%;
+}
+
+label {
+  display: none;
+}
+
+.submit {
+  color: white;
+  background-color: var(--main-dark);
+  height: 3rem;
+}
+
 footer {
   margin-top: 20rem;
 }
@@ -153,10 +177,15 @@ footer {
   margin: 2rem auto 2rem;
 }
 
-.exhibit-text-box {
+.exhibit-text-box,
+.form-box {
   border-radius: 5px;
   background-color: var(--main-light);
   padding: 2rem 0 2rem;
+}
+
+.form-box {
+  text-align: left;
 }
 
 .exhibit-audio {
