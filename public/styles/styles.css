@@ -50,8 +50,9 @@ audio {
 input,
 textarea {
   width: 90%;
+  margin-top: 1rem;
   margin-bottom: 2rem;
-  border-color: var(--main-dark);
+  border-color: var(--main-mid);
   border-radius: 5px;
   border-width: 1px;
   margin-left: 5%;
@@ -97,6 +98,8 @@ footer {
 
 .nav-link {
   color: var(--main-light);
+  border-left: 2px solid var(--main-mid);
+  padding-left: 10px;
 }
 
 #intro {
@@ -310,6 +313,10 @@ footer {
   .exhibit-img {
     margin: 2rem 1rem 2rem;
   }
+
+  .ruler {
+    display: none;
+  }
 }
 
 /* below was 770px */
@@ -320,6 +327,18 @@ footer {
 
   .audio-positioner {
     flex-direction: column-reverse;
+  }
+
+  .ruler-3 {
+    display: none;
+  }
+}
+
+/* 768 */
+
+@media (max-width: 768px) {
+  .ruler {
+    display: block;
   }
 }
 
@@ -335,5 +354,9 @@ footer {
 
   .player-btn {
     float: end;
+  }
+
+  .ruler {
+    display: block;
   }
 }
