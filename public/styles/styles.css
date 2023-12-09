@@ -4,6 +4,7 @@
   --main-dark: #4b56d2;
   --main-mid: #82c3ec;
   --main-light: #f1f6f5;
+  --shadow: #888;
 }
 
 /*  */
@@ -11,7 +12,8 @@
 body {
   font-family: "Montserrat";
   letter-spacing: 0.05rem;
-  background-color: var(--main-mid);
+  /* background-color: var(--main-mid); */
+  background-color: var(--main-light);
 }
 
 h1 {
@@ -89,6 +91,7 @@ footer {
   margin-top: 6rem;
   padding-bottom: 0.4rem;
   margin-bottom: 2rem;
+  box-shadow: 1px 1px 2px var(--shadow);
 }
 
 #intro h2 {
@@ -104,7 +107,7 @@ footer {
   padding-top: 1rem;
   text-align: center;
   color: white;
-  text-shadow: 1px 1px 3px darkslategray;
+  text-shadow: 1px 1px 3px black;
 }
 
 .landing-img {
@@ -134,6 +137,7 @@ footer {
   border-radius: 5px;
   color: white;
   padding-bottom: 1rem;
+  box-shadow: 2px 2px 4px var(--shadow);
 }
 
 .background1 h1 {
@@ -150,6 +154,7 @@ footer {
   background-position: center;
   border-radius: 5px;
   padding-bottom: 1rem;
+  box-shadow: 2px 2px 4px var(--shadow);
 }
 
 .background2 h1 {
@@ -162,9 +167,10 @@ footer {
 }
 
 .background3 {
-  background-color: var(--main-light);
+  background-color: white;
   border-radius: 5px;
   padding-bottom: 1rem;
+  box-shadow: 2px 2px 4px var(--shadow);
 }
 
 .background3 h1 {
@@ -180,8 +186,9 @@ footer {
 .exhibit-text-box,
 .form-box {
   border-radius: 5px;
-  background-color: var(--main-light);
+  background-color: white;
   padding: 2rem 0 2rem;
+  box-shadow: 2px 2px 4px var(--shadow);
 }
 
 .form-box {
@@ -220,7 +227,7 @@ footer {
   color: var(--main-dark);
   background-color: var(--main-light);
   border-radius: 5px;
-  box-shadow: 1px 1px 2px darkslategray;
+  box-shadow: 1px 1px 2px var(--shadow);
   text-shadow: none;
 }
 
@@ -240,7 +247,7 @@ footer {
   background-color: var(--main-dark);
   border: var(--main-light);
   border-width: 10px;
-  box-shadow: 1px 1px 2px darkslategray;
+  box-shadow: 1px 1px 2px var(--shadow);
 }
 
 .ruler {
@@ -257,8 +264,9 @@ footer {
 }
 
 #guide {
-  background-color: var(--main-light);
+  background-color: white;
   border-radius: 5px;
+  box-shadow: 2px 2px 4px var(--shadow);
 }
 
 /* media queries */
