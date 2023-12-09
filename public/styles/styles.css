@@ -4,7 +4,7 @@
   --main-dark: #4b56d2;
   --main-mid: #82c3ec;
   --main-light: #f1f6f5;
-  --shadow: #888;
+  --shadow: #aaa;
 }
 
 /*  */
@@ -61,6 +61,11 @@ form h3 {
   margin-left: 5%;
 }
 
+input,
+textarea {
+  background-color: var(--main-light);
+}
+
 label {
   display: none;
 }
@@ -69,6 +74,7 @@ label {
   color: white;
   background-color: var(--main-dark);
   height: 3rem;
+  box-shadow: 1px 1px 2px var(--shadow);
 }
 
 footer {
@@ -77,12 +83,25 @@ footer {
 
 .navbar {
   color: var(--main-light);
-  background-color: var(--main-dark);
+  /* background-color: var(--main-dark); */
+  background-image: linear-gradient(to bottom right, var(--main-dark), #2832a0);
+}
+
+.navbar-toggler > .material-symbols-outlined {
+  color: var(--main-light);
+}
+
+.navbar-toggler {
+  border-color: var(--main-light);
+}
+
+.nav-link {
+  color: var(--main-light);
 }
 
 #intro {
   color: white;
-  background-image: url("../images/AllPieces1.jpeg");
+  background-image: url("../images/AllPieces2.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -177,6 +196,11 @@ footer {
   padding-top: 2rem;
 }
 
+.border-bottom {
+  border-bottom-color: var(--main-mid) !important;
+  border-bottom-width: 2px !important;
+}
+
 .exhibit-img {
   color: white;
   /* margin-top: 2rem; */
@@ -244,7 +268,7 @@ footer {
 
 .player-btn:active {
   color: var(--main-light);
-  background-color: var(--main-dark);
+  background-color: var(--main-mid);
   border: var(--main-light);
   border-width: 10px;
   box-shadow: 1px 1px 2px var(--shadow);
@@ -253,7 +277,8 @@ footer {
 .ruler {
   width: 70%;
   margin-left: 15%;
-  color: var(--main-mid);
+  background-color: var(--main-mid);
+  height: 3px;
 }
 
 .footer-text {
